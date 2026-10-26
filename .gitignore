@@ -1,0 +1,55 @@
+# =====================================================================
+# .gitignore projektu data science
+# Uwaga: .gitignore nie działa wstecz. Plik, który już trafił do
+# repozytorium, trzeba z niego usunąć poleceniem:
+#   git rm --cached <ścieżka>        (dla katalogu: git rm -r --cached)
+# a potem zrobić commit. Plik zostaje na dysku.
+# =====================================================================
+
+# --- Dane ------------------------------------------------------------
+# Struktura katalogów zostaje w repozytorium (pliki .gitkeep),
+# a same dane nie.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- Modele i duże artefakty -----------------------------------------
+models/
+*.pkl
+*.joblib
+*.h5
+*.parquet
+
+# --- Środowiska wirtualne --------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Sekrety ---------------------------------------------------------
+# Prawdziwe wartości trzymamy w .env, a wzór w .env.example.
+.env
+.env.*
+!.env.example
+
+# --- Python ----------------------------------------------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+
+# --- Jupyter ---------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- Ustawienia IDE --------------------------------------------------
+.vscode/
+.idea/
+
+# --- Pliki systemowe -------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini

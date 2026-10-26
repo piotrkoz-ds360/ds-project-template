@@ -1,0 +1,3 @@
+# Normalizacja końców linii: w repozytorium zawsze LF,
+# na dysku zgodnie z ustawieniami systemu.
+* text=auto

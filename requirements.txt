@@ -1,0 +1,12 @@
+# Wersja Pythona: 3.13
+
+# Jupyter w VS Code (bez tego pakietu VS Code nie uruchomi kernela)
+ipykernel
+
+# Wczytywanie zmiennych z pliku .env
+python-dotenv
+
+# Podstawowy zestaw do analizy danych
+numpy
+pandas
+matplotlib
